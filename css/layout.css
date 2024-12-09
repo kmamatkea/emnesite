@@ -1,0 +1,29 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumb-link {
+    display: grid;
+    background-color: blue;
+}
+
+/* Placerer alle items i grid i første kolonne og række "ovenpå" hinanden og centreret */
+.thumb-link>* {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.thumb-link p {
+    font-size: 3rem;
+    background-color: #bea;
+    padding: 1rem;
+}
+
+/* Skjul paragraf ved hover over .thumb-link */
+.thumb-link:hover p {
+    display: none;
+}
